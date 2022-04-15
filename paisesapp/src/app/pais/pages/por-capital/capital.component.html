@@ -1,0 +1,13 @@
+<div class="row justify-content-start">
+    <div class="col12">
+        <h3>Por capital</h3>
+    </div>
+    <div class="col">
+        <hr class="text-grey">
+    </div>
+    <div class="col-12">
+        <app-pais-input (buscar)="buscarCapital($event)"></app-pais-input>
+
+    </div>
+    <app-tablapaises  [paises]="paises"></app-tablapaises>
+</div>

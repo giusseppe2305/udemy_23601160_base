@@ -1,0 +1,18 @@
+<div class="row justify-content-start">
+    <div class="col-12">
+        <h3>Por region</h3>
+    </div>
+    <div class="col">
+        <hr class="text-grey">
+    </div>
+    <div class="col-12">
+        <h6>Seleccione por region</h6>
+        <div class="d-flex ">
+            <button type="button" class="btn btn-primary mx-1" *ngFor="let region of regiones"
+                (click)="buscarRegion(region)"> {{region}}
+            </button>
+        </div>
+    </div>
+    <app-tablapaises [paises]="paises"></app-tablapaises>
+
+</div>

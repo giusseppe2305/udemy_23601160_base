@@ -1,0 +1,15 @@
+<div class="col12">
+    <h3>Por país</h3>
+</div>
+<div class="col">
+    <hr class="text-grey">
+</div>
+<div class="col-12">
+   <app-pais-input 
+   (onDebounce)="sugerencias($event)"
+   (buscar)="buscarPais($event)"></app-pais-input>
+</div>
+<div class="alert alert-danger mt-2" *ngIf="hayError" >
+    No se encontro ningun resultado con el termino {{this.query}}
+</div>
+<app-tablapaises [paises]="paises"></app-tablapaises>

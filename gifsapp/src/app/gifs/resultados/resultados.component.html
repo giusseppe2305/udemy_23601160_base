@@ -1,0 +1,8 @@
+<div class="col-12 col-md-6 col-lg-4 col-xl-2 p-2" *ngFor="let gif of resultados">
+    <div class="card">
+        <img class="card-img-top" [src]="gif.images.downsized.url" [alt]="gif.title">
+        <div class="card-body">
+            <p class="card-text">{{gif.title}}</p>
+        </div>
+    </div>
+</div>
